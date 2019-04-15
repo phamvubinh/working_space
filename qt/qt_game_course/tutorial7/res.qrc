@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>SampleAudio_0.4mb.mp3</file>
+        <file>SampleAudio_0.7mb.mp3</file>
+    </qresource>
+</RCC>

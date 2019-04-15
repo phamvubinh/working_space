@@ -1,0 +1,6 @@
+
+python setup.py build
+python setup.py bdist_msi
+install cx_Freeze
+
+add work around for the tcl tk library

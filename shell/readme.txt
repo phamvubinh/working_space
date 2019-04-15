@@ -1,0 +1,2 @@
+- Basic functions on shell implementation.
+- Running on UBUNTU 12.04

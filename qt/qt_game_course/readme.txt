@@ -1,0 +1,1 @@
+- Space simple game is created by using QT Creator 2.4.1, QT 4.0 version
