@@ -1,0 +1,21 @@
+Description :
+	Mini Project to build shared lib and test by application
+	Makefile system is built for:
+	- all subfolder item build
+	- dependency item build
+
+Build :
+	1. In 05.library_checking folder
+	2. Type "make all" to make:
+		- shared library libfoo.so 
+		- test application that uses function from libfoo.so 
+		- install and uninstall program to setup library
+Run :
+	1. Run sudo ./setup/install to 
+		- install libfoo.so into /usr/bin:
+		- copy test program into /bin directory
+	2. Run test program in anywhere to see this test app run the function in shared lib 
+	    
+Clean:
+    1. In 05.library_checking folder
+	2. Type "make clean" to clean all object and binary file
