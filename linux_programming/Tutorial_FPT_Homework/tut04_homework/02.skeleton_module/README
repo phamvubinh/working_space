@@ -1,0 +1,12 @@
+1. make modules
+   -> skeleton_module_1.ko and skeleton_module_2.ko
+2. ./insmode.sh 1 skeleton_module_2.ko
+   -> install module and check result by lsmod
+3. ./insmode.sh 2 
+   -> create device file from device module major find from /proc/devices
+   -> read and write to device file and see result in dmesg
+4. ./insmode.sh 1 skeleton_module_1.ko
+   -> install module and check result by lsmod
+5. Check result under /dev:
+	cat /dev/skeleton
+	echo 1 /dev/skeleton
