@@ -1,0 +1,4 @@
+1. make all
+2. ./insmode.sh 1 ioctl_control_power_state_module.ko
+3. ./insmode.sh 2
+4. ./ioctl_control_power_state_app -s -t 10
