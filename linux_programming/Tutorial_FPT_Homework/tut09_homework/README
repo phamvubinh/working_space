@@ -1,0 +1,17 @@
+1. Basic example: basic connection and chatting from client and server
+	make all
+	./01.server_basic
+	./01.client_basic in other terminal
+	On client console, chat to server and see ACK data
+
+
+2. File transfer example: client request file transfer from server
+	make all
+	./02.server_file_transfer
+	./02.client_file_transfer in other terminal
+	
+	On client console:
+		Type 0 to see file list
+		Type 1 to add file name and request
+		Insert file name and enter to send request to server
+		Check file content in 02.client_result_file.txt
