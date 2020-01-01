@@ -1,0 +1,7 @@
+Server and client tranfer data through signal and and share memory
+- make
+- ./server_share_memory
+- ./client_share_memory.sh  
+  Reason is this file will find running PID of server and run ./client_share_memory binary with found PID
+- Insert user data from client
+- Server will wake up, read data and send log out 
