@@ -1,0 +1,20 @@
+This example includes:
+- LED driver to control 4 user leds on BBB:
+	- basic driver include read write function
+	- ioctl implementation
+	- copy to user and copy from user example
+- Application to control LED 
+- Using native compile on BBB:
+    - sudo apt-get update
+    - apt-cache search linux-headers-$(uname -r)
+    - sudo apt-get install linux-headers-4.14.108-ti-r113
+    - /lib/modules/$(shell uname -r)/build will exist
+
+This is running steps:
+- make all
+- sudo insmod 01_LED_module.ko
+- chmod 777 /dev/led
+- ./01_LED_app -o -i 3 -s 1 	to turn on led 3
+- ./01_LED_app -o -i 3 -s 0		to turn off led 3
+- ./01_LED_app -b -i 3 -s 0		to blink led 3
+- sudo rmmod 01_LED_module
