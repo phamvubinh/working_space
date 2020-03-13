@@ -10,6 +10,6 @@ SRCS    := $(wildcard *.cpp)
 all:
 	$(CPP) $(CFLAGS) $(SRCS) -o $(PRG) $(LIB)
 clean:
-	rm -rf *.o (PRG)
+	rm -rf *.o $(PRG)
 
 # sudo apt-get install libboost-filesystem-dev 

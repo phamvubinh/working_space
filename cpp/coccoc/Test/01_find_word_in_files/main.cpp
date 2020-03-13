@@ -11,6 +11,13 @@ int main(int argc, char const *argv[])
 	/* String to save path variable */
 	string path = "";
 
+	/* Variable to save time */
+	time_t startTime  = {0};
+	time_t finishTime = {0};
+
+	/* Start counting the time */
+	startTime = time(NULL);
+
 	/* If there is only 2 argument then check current dir */
 	if (argc == 2)
 	{
@@ -23,7 +30,7 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		cout << "Usage: ./coccoc \"many words\" [path to dictionary]";
+		cout << "Usage: ./coccoc \"many words\" [path to dictionary]\n";
 		return 0;
 	}
 
@@ -38,5 +45,11 @@ int main(int argc, char const *argv[])
 
 	/* Find word list in all file set true or false option to make  */
 	ff.find_word(true);
+
+	/* End of counting time */
+	finishTime = time(NULL);
+
+	cout << "Running time: " << finishTime - startTime << endl;
+
 	return 0;
 }
