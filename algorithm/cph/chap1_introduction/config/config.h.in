@@ -1,0 +1,3 @@
+// the configured options and settings for CPH
+#define CPH_VERSION_MAJOR @CPH_VERSION_MAJOR@
+#define CPH_VERSION_MINOR @CPH_VERSION_MINOR@
