@@ -6,3 +6,4 @@ project(CPH VERSION 1.0)
 # add the directory for each chapter
 add_subdirectory(chap1_introduction)
 add_subdirectory(chap3_sorting)
+add_subdirectory(chap4_datastructure)
